@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N A R A D A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="top-right-ul-nav">
+            <ul class="top-right-menu-nav">
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="log-in-page">
+                        Log In
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="restaurant-title">
+            <h1 class="h1-title">NARADA</h1>
+        </div>
+        <div class="site-menu-ul">
+            <ul class="site-menu">
+                <li>
+                    <h6 id="home-btn-nav">Home</h6>
+                </li>
+                <li>
+                    <h6 id="our-vision-btn-nav">Our Vision</h6>
+                </li>
+                <li>
+                    <h6 id="menu-btn-nav">Menu</h6>
+                </li>
+                <li>
+                    <h6 id="reservation-btn-nav">Reservations</h6>
+                </li>
+                <li>
+                    <h6 id="contact-btn-nav">Contact Us</h6>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- scroll to top button -->
+    <button class="scroll-to-top-button">
+        <i class="fa-solid fa-chevron-up" style="color: whitesmoke;"></i>
+    </button>
+    <!-- main page -->
+    <section id="home-section" class="home page active">
+        <div class="parallax-container">
+            <div class="parallax-background"></div>
+            <div class="welcome-div">
+                <h1 class="welcome-h1">
+                    LOCAL CUISINE <br> DELIVERED TO YOUR DOORSTEP
+                </h1>
+                <button id="menu-button-main-page">
+                    Menu
+                </button>
+            </div>
+        </div>
+        <div class="first-half-upper">
+            <div class="first-half-left">
+                <img class="img-size slide" src="pics\2nd-main-pic.jpg" alt="dining">
+                <img class="img-size-1 slide" src="pics\7th-picture.jpg" alt="dessert">
+                <div class="text-under-left-half">
+                    <h6 class="narada-news">NARADA News</h6>
+                    <h3 class="treat-yourself">Treat Yourself <br> with something good</h3>
+                    <p class="restaurant-visit-p">Treating yourself to a restaurant visit is not just about indulging in a delightful meal; it's a celebration of self-care and a rejuvenating experience for the soul.</p>
+                </div>
+                <button class="read-more-button-left">Ream More here ></button>
+            </div>
+            <div class="second-half-right">
+                <div class="text-upper-right-half">
+                    <h6 class="our-restaurant-h6">OUR RESTAURANT</h6>
+                    <h3 class="local-h3">Local fresh cuisine for everyone</h3>
+                    <p class="the-act-of-dish-p"> The act of choosing a dish tailored to your cravings and savoring each bite becomes a moment of self-appreciation.</p>
+                    <button class="read-more-button-right">Read More here ></button>
+                </div>
+                <img class="img-size-1 slide1" src="pics\8th-picture.jpg" alt="fruits">
+                <img class="img-size slide1" src="pics\4th-picture.jpg" alt="steak">
+                
+            </div>
+        </div>
+        <div class="second-half-lower">
+            <div class="first-half-bottom">
+                    <!-- set background img through css -->
+                    <div class="food-faster">
+                        <h3 class="food-faster-h3">The Goodies Just Got <span>Faster.</span></h3>
+                        <button class="order-online-button">
+                            Order Online
+                        </button>
+                    </div>
+            </div>
+            <div class="second-half-bottom">
+                <h2 class="savor-moments-h2">"Savor the moments, indulge in flavors, and let every meal be a celebration of joy. <br> Cheers to creating memories one exquisite flavor at a time."</h2>
+            </div>
+        </div>
+        <div class="parallax-container-reservation">
+            <div class="parallax-reservation"></div>
+            <!-- put a form -->
+            <h2 class="reservation-h2">Make a <span class="reservation-span">Reservation</span></h2>
+            <form id="reservationForm">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                   <input type="date" id="date-reservation" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="partySize">Party Size:</label>
+                    <select id="partySize" id="guest-reservation" class="guest-reservation" name="partySize" required>
+                        <!-- Options for party size from 1 to 12 -->
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                        <option value="7">7 people</option>
+                        <option value="8">8 people</option>
+                        <option value="9">9 people</option>
+                        <option value="10">10 people</option>
+                        <option value="11">11 people</option>
+                        <option value="12">12 people</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <select name="time" id="time-reservation" required>
+                        <option value="7:00pm">7:00 PM</option>
+                        <option value="7:30pm">7:30 PM</option>
+                        <option value="8:00pm">8:00 PM</option>
+                        <option value="8:30pm">8:30 PM</option>
+                        <option value="9:00pm">9:00 PM</option>
+                        <option value="9:30pm">9:30 PM</option>
+                        <option value="10:00pm">10:00 PM</option>
+                        <option value="10:30pm">10:30 PM</option>
+                        <option value="11:00pm">11:00 PM</option>
+                    </select>
+                </div>
+            
+                <button id="reservation-button" type="submit">Submit Reservation</button>
+            </form> 
+        </div>
+    </section>  
+      <!-- our vision page  -->
+    <section id="our-vision-section" class="our-vision page">
+        <div class="our-vision-parralax">
+            <div class="our-vision-background-parralax"></div>
+            <div class="welcome-div our-vision-welcome">
+                <h1 class="welcome-h1">
+                    Discover N A R A D A : <br> Unveiling the Essence of Our Restaurant.
+                </h1>
+            </div>
+        </div>
+        <div class="our-vision-second-part-container">
+            <div class="our-vision-second-part-left">
+                <p class="our-vision-paragraph">
+                    "At N A R A D A , we are driven by a deep commitment to providing an unparalleled culinary experience, where flavors dance, and every dish tells a story. Rooted in our values of quality, creativity, and hospitality, we strive to create an atmosphere that transcends the ordinary. Our chefs, inspired by diverse culinary traditions, curate a menu that harmonizes tradition and innovation. At the heart of Narada is a dedication to sourcing the finest ingredients, ensuring that each dish reflects our passion for authenticity and taste. Beyond the plate, our warm and welcoming ambiance is a testament to our belief that every guest is a cherished part of the Narada family. Come join us on a gastronomic journey where excellence meets hospitality, and indulge in the artistry that defines the essence of Narada."
+                </p>
+                <img class="img-size-1 img-vision" src="pics\12th-picture.jpg" alt="chef2">
+            </div>
+            <div class="our-vision-second-part-right">
+                <img class="img-size img-vision-1" src="pics\11th-picture.jpg"  alt="chef1">
+            </div>
+        </div>
+        <div class="blog-our-vision-container">
+            <div class="container-vision">
+                <h2 class="from-the-press">From The Press</h2>
+                <div class="review-vision">
+                    <h1 class="number-review">1</h1>
+                    
+                    <div class="review-comment-container">
+                        <h6 class="website-source-review">
+                            GourmetHeaven.com
+                        </h6>
+                        <h3 class="review-comment">
+                           <i>“N A R A D A is a culinary gem! Cozy ambiance, delightful menu. Must try: truffle pasta. Friendly staff adds charm.”</i>
+                        </h3>
+                    </div>
+                </div>
+                <div class="review-vision">
+                    <h1 class="number-review">2</h1>
+                    
+                    <div class="review-comment-container">
+                        <h6 class="website-source-review">
+                            FlavorsOfAsia.com
+                        </h6>
+                        <h3 class="review-comment">
+                            <i>“Authentic dishes, fresh sushi. Knowledgeable staff. A must-visit for food enthusiasts.We had the most amazing time!”
+                            </i>
+                        </h3>
+                    </div>
+                </div>
+                <div class="review-vision">
+                    <h1 class="number-review">3</h1>
+                    <div class="review-comment-container">
+                        <h6 class="website-source-review">
+                            CafeSerenity.com
+                        </h6>
+                        <h3 class="review-comment">
+                        <i>“Avocado toast and specialty coffee are top-notch. Tranquil     outdoor seating. A go-to spot for a relaxing brunch.”
+                        </i>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="our-vision-parralax2">
+            <div class="our-vision-background-parralax2"></div>
+        </div>
+    </section>
+    <!-- menu page -->
+    <section id="menu-section" class="menu-page">
+        <div class="parallax-container-menu">
+            <div class="parallax-background-menu"></div>
+            <div class="welcome-div menu-h1-div">
+                <h1 class="welcome-h1-menu">
+                    "Our Culinary Selection"
+                </h1>
+            </div>
+        </div>
+        <div id="menu-items-container">
+            <div id="starters-container">
+                <div class="starters-title-div">
+                    <h3 class="starters-title">Starters</h3>
+                    <p class="savor-p">Savor the moment, ignite your appetite, and let the appetizing symphony begin!
+                    </p>
+                </div>
+                <div class="starters-grid-container">
+                    <div class="starters-item">
+                        <h6 class="starters-item-title">Caprese Skewers</h6>
+                        <p class="starters-item-ingridients">Fresh cherry tomatoes, Mozzarella cheese balls, Fresh basil leaves, Balsamic glaze, Olive oil, Salt, and pepper to taste.</p>
+                        <p class="item-price">9</p>
+                    </div>
+                    <div class="starters-item">
+                        <h6 class="starters-item-title">Spinach and Artichoke Dip</h6>
+                        <p class="starters-item-ingridients">Fresh spinach, chopped Artichoke hearts, chopped Cream cheese, Sour cream, Parmesan cheese, Garlic, minced, Salt, and pepper to taste.</p>
+                        <p class="item-price">9</p>
+                    </div>
+                    <div class="starters-item">
+                        <h6 class="starters-item-title">Shrimp Cocktail</h6>
+                        <p class="starters-item-ingridients">Large shrimp, peeled and deveined, Cocktail sauce, Fresh lemon wedges, Iceberg lettuce leaves.</p>
+                        <p class="item-price">12</p>
+                    </div>
+                    <div class="starters-item">
+                        <h6 class="starters-item-title">Bruschetta</h6>
+                        <p class="starters-item-ingridients">Roma tomatoes, diced, Fresh basil, chopped, Garlic, minced, Balsamic vinegar, Olive oil, Salt, and pepper to taste, Baguette slices.</p>
+                        <p class="item-price">10</p>
+                    </div>
+                    <div class="starters-item">
+                        <h6 class="starters-item-title">Stuffed Mushrooms</h6>
+                        <p class="starters-item-ingridients">Cremini or button mushrooms, Cream cheese, Garlic, minced, Parmesan cheese, Fresh parsley, chopped, Bread crumbs.</p>
+                        <p class="item-price">6</p>
+                    </div>
+                    <div class="starters-item">
+                        <h6 class="starters-item-title">Chicken Satay Skewers</h6>
+                        <p class="starters-item-ingridients">Chicken breast, cut into strips, Soy sauce, Peanut butter, Garlic, minced, Honey, Skewers.</p>
+                        <p class="item-price">15</p>
+                    </div>
+                </div>
+            </div>
+            <div id="mains-container">
+                <div class="mains-title-div">
+                    <h3 class="mains-title">Mains</h3>
+                    <p class="savor-p">Elevate your dining experience with our main dishes,a symphony of flavors that promises to delight your senses.
+                    </p>
+                </div>
+                <div class="mains-grid-container">
+                    <div class="mains-item">
+                        <h6 class="mains-item-title">Grilled Salmon with Lemon Herb Butter</h6>
+                        <p class="mains-item-ingridients">Succulent salmon fillets, Grilled to perfection, Drizzled with a zesty Lemon Herb Butter sauce, Served with a medley of seasonal vegetables and quinoa.</p>
+                        <p class="item-price">21</p>
+                    </div>
+                    <div class="mains-item">
+                        <h6 class="mains-item-title">Creamy Mushroom Risotto</h6>
+                        <p class="mains-item-ingridients">Arborio rice simmered to creamy perfection, Sauteed mushrooms, Shallots, White wine, Rich chicken or vegetable broth, Parmesan cheese, Finished with a touch of fresh parsley.</p>
+                        <p class="item-price">17</p>
+                    </div>
+                    <div class="mains-item">
+                        <h6 class="mains-item-title">Grilled Vegetable and Quinoa Bowl</h6>
+                        <p class="mains-item-ingridients">Assorted grilled vegetables (zucchini, bell peppers, cherry tomatoes), Nutty quinoa, Drizzled with a balsamic glaze, Topped with crumbled feta cheese and fresh basil.</p>
+                        <p class="item-price">12</p>
+                    </div>
+                    
+                    <div class="mains-item">
+                        <h6 class="mains-item-title">Sizzling Beef Fajitas</h6>
+                        <p class="mains-item-ingridients">Tender strips of marinated beef, Colorful bell peppers, Onions, Served on a sizzling hot plate, Accompanied by warm flour tortillas, Guacamole, Salsa, and sour cream.</p>
+                        <p class="item-price">18</p>
+                    </div>
+                    <div class="mains-item">
+                        <h6 class="mains-item-title">Vegetarian Pad Thai</h6>
+                        <p class="mains-item-ingridients">Rice noodles stir-fried with tofu, Bean sprouts, Peanuts, Scallions, Tamarind sauce, Lime, Garnished with cilantro and a sprinkle of chili flakes.</p>
+                        <p class="item-price">15</p>
+                    </div>
+                    <div class="mains-item">
+                        <h6 class="mains-item-title">Chicken Alfredo Pasta</h6>
+                        <p class="mains-item-ingridients">Fettuccine pasta, Creamy Alfredo sauce, Grilled chicken breast, Parmesan cheese, Garlic, Butter, Freshly ground black pepper.</p>
+                        <p class="item-price">20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- reservation page -->
+    <section id="reservation-section" class="reservation-page">
+        <div class="reservation-container-page">
+            <h2 class="reservation-h2">Make a <span class="reservation-span">Reservation</span></h2>
+            <div class="border-line-reservation"></div>
+            <form action="index.html" method="POST" id="reservationForm2">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input name="date" type="date" id="date-reservation" class="date-reservation" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="partySize">Party Size:</label>
+                    <select id="partySize" class="guest-reservation-2" name="partySize" required>
+                        <!-- Options for party size from 1 to 12 -->
+                        <option value="1">1 person</option>
+                        <option value="2">2 people</option>
+                        <option value="3">3 people</option>
+                        <option value="4">4 people</option>
+                        <option value="5">5 people</option>
+                        <option value="6">6 people</option>
+                        <option value="7">7 people</option>
+                        <option value="8">8 people</option>
+                        <option value="9">9 people</option>
+                        <option value="10">10 people</option>
+                        <option value="11">11 people</option>
+                        <option value="12">12 people</option>
+                    </select>
+                </div>
+            
+                <div class="form-group">
+                    <label for="time">Time:</label>
+                    <select name="time" id="time-reservation" class="time-reservation" required>
+                        <option value="7:00pm">7:00 PM</option>
+                        <option value="7:30pm">7:30 PM</option>
+                        <option value="8:00pm">8:00 PM</option>
+                        <option value="8:30pm">8:30 PM</option>
+                        <option value="9:00pm">9:00 PM</option>
+                        <option value="9:30pm">9:30 PM</option>
+                        <option value="10:00pm">10:00 PM</option>
+                        <option value="10:30pm">10:30 PM</option>
+                        <option value="11:00pm">11:00 PM</option>
+                    </select>
+                </div>
+            
+                <button type="submit" id="reservation-button-resv-page">Submit Reservation</button>
+            </form> 
+        </div>
+    </section>
+    <section id="confirm-section" class="confirm-reservation-page">
+        <div class="confirm-container">
+            <div class="left-confirm-container">
+                <h1 class="complete-reservation-h1">Complete your reservation</h1>
+                <p class="fill-details-p">Please fill in your details:</p>
+                <form action="sendEmail.php" method="POST" class="reservation-form-confirm-page">
+                    <div class="first-last-input-div">
+                        <input name="firstName" class="input-confirm-page" placeholder="First Name *" type="text" required>
+                        <input name="lastName" class="input-confirm-page" placeholder="Last Name" type="text">
+                    </div>
+                    <div class="phone-email-input-div">
+                        <input name="phoneNumber" class="input-confirm-page" placeholder="Phone Number" type="tel" required>
+                        <input name="email" type="email" class="input-confirm-page" placeholder="example@example.com" required>
+                    </div>
+                    <label class="label-confirm-page" for="special-request">Any Special Request</label>
+                    <input name="specialRequest" id="special-request-height" type="text">
+                    <p class="thank-you-for-choosing">Thank you for choosing N A R A D A. Please note that we will hold your table for up to 15 minutes from the time of your reservation. If your plans change or you anticipate being late, kindly let us know as soon as possible. We look forward to hosting you!</p>
+                    <div class="checkbox-text-button-div">
+                        <div class="checkbox-text-container-div">
+                            <input class="checkbox-input" type="checkbox" required>
+                            <p class="agree-terms-text">
+                                I agree to the terms of service from the restaurant , updates and other promotional content won't be sent.
+                            </p>
+                        </div>
+                    </div>
+                    <button id="confirm-reservation-button" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="right-confirm-container">
+                <p class="out-of-time-text">Your table will be held for you for <span class="dynamic-minutes-display">10:00</span> minutes.</p>
+                <div class="second-box-confirm-right-page">
+                    <p class="reservation-details-confirm-page">
+                        Reservation details:
+                    </p>
+                    <p class="dynamically-fetch-day-date-time">
+                     <span class="date-span-confirm"></span> , <span class="time-span-confirm"></span> .
+                    </p>
+                    <p class="dynamically-fetch-number-of-guests">
+                    </p>
+                    <p class="location-of-reservation-text">
+                        Athens , Greece.
+                    </p>
+                    <button id="change-dates">Change</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact page -->
+    <section id="contact-section" class="contact-section">
+        <div class="contact-parralax">
+            <div class="contact-background-parralax"></div>
+            <div class="welcome-div our-vision-welcome">
+                <h1 class="welcome-h1-menu">
+                    Contact Us
+                </h1>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="left-contact-side-containder">
+                <h1 class="location-title">Location & Hours</h1>
+                <p class="address-text">
+                    Mirtias 22 , Ekali 145 78 <br> Athens , Greece
+                </p>
+                <p class="opening-hours-p">
+                    Open Monday to Friday 12pm to 10pm <br>
+                    Saturday to Sunday 12pm to 11pm
+                </p>
+                <p class="hear-from-you-p">
+                    We'd love to hear from you!
+                </p>
+                <form  action="https://hotmail.us21.list-manage.com/subscribe/post?u=26f2d3e39ecf1d70ffebec4f3&amp;id=590b3d9967&amp;f_id=00fafae6f0" class="contact-form-container">
+                    <div class="inputs-contanainer-flex">
+                        <div class="left-input-side">
+                            <input type="text" name="FNAME" class="contact-form-input" placeholder="Your Name" required>
+                            <input type="email" name="EMAIL" class="contact-form-input" placeholder="example@example.com" required>
+                            <input type="text" name="Subject-contact"class="contact-form-input margin00" placeholder="Subject">
+                        </div>
+                        <div class="right-side-input">
+                            <input type="text" name="MMERGE6" class="contact-form-input-message" placeholder="Type your Message here..">
+                        </div>
+                    </div>
+                    <button type="submit" name="subscribe"  value="Subscribe" id="mc-embedded-subscribe"  class="submit-contact-form-btn">Submit</button>
+                </form>
+            </div>
+            <div class="right-contact-side-containder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.075324116291!2d23.838751054272873!3d38.115181985950834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a19e16b2ba3a1f%3A0x4cd6a9f4d54024ec!2sMirtias%2022%2C%20Ekali%20145%2078!5e0!3m2!1sen!2sgr!4v1706288117639!5m2!1sen!2sgr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+    <div class="confirm-icon-container">
+        <div class="swal-icon swal-icon--success">
+            <span class="swal-icon--success__line swal-icon--success__line--long"></span>
+            <span class="swal-icon--success__line swal-icon--success__line--tip"></span>
+            <div class="swal-icon--success__ring"></div>
+            <div class="swal-icon--success__hide-corners"></div>
+        </div>
+        <h1 class="success-reservation-h1">The Reservation was Successful , waiting to host you!</h1>
+    </div>
+    <div class="footer-main">
+        <div class="center-footer">
+            <div class="left-footer-main">
+                <h4 class="join-sublist">
+                    Join our mailing list for Updates!
+                </h4>
+                <form>
+                    <label for="email">Email:</label>
+                    <input class="email-subs" placeholder="example@example.com" required>
+                    <button id="button-subs" type="submit">SUBSCRIBE HERE</button>
+                </form>
+            </div>
+            <div class="right-footer-main">
+                <h6 class="adress-footer">Mirtias 22 <br>Ekali 145 78 <br>Athens , Greece</h6>
+            </div>  
+            
+        </div>
+    </div>
+    <p class="copyright">© 2024 by N A R A D A . Powered by Apostolis .</p>
+    <script src="script.js"></script>
+    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[6]='MMERGE6';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script></div> -->
+</body>
+</html>
